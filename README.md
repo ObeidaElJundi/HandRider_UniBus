@@ -48,7 +48,7 @@
 
     * ![image](https://user-images.githubusercontent.com/9033365/27075328-7792a1ca-5032-11e7-95f5-12562d02dd3c.png)
   
-  7. When the driver gets close to the waiting passenger (detected by geofencing), a reminder will be fired (see figure 25), and the map will zoom to show the bus and the passenger (see figure 24). After picking the passenger, its marker will be removed.
+  7. When the driver gets close to the waiting passenger (detected by geofencing), a reminder will be fired, and the map will zoom to show the bus and the passenger. After picking the passenger, its marker will be removed.
 
     * ![image](https://user-images.githubusercontent.com/9033365/27075368-8d8d4e6c-5032-11e7-9123-06da133d7d87.png)
 
