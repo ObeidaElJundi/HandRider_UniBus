@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_voice_commands"
+        android:checkable="true"
+        android:checked="false"
+        android:title="Enable voice commands"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_item_night_mode"
+        android:checkable="true"
+        android:checked="false"
+        android:title="Night Mode"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_item_track_me"
+        android:checkable="true"
+        android:checked="false"
+        android:title="Track Me"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_item_where_am_i"
+        android:title="Where am I"
+        app:showAsAction="never"/>
+
+</menu>

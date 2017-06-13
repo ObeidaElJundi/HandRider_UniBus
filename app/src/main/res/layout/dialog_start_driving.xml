@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView android:id="@+id/dialog_start_driving_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:text=" \n "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/gray"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="12dp">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/dialog_start_driving_radio_now"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:button="@null"
+            android:text="NOW"
+            android:textColor="@color/dialog_text_color_selector"
+            android:background="@drawable/bg_dialog_start_driving"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/dialog_start_driving_radio_after"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:button="@null"
+            android:text="AFTER"
+            android:textColor="@color/dialog_text_color_selector"
+            android:background="@drawable/bg_dialog_start_driving"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/dialog_start_driving_radio_at"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:button="@null"
+            android:text="AT"
+            android:textColor="@color/dialog_text_color_selector"
+            android:background="@drawable/bg_dialog_start_driving"/>
+
+    </RadioGroup>
+
+    <LinearLayout android:id="@+id/dialog_start_driving_LL_after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="22dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="12dp">
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/dialog_start_driving_wheel_after_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:wheel_curtain="false"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="false"
+                app:wheel_indicator="true"
+                app:wheel_indicator_color="@color/colorAccent"
+                app:wheel_item_text_color="@color/gray"
+                app:wheel_item_text_size="16sp"
+                app:wheel_maximum_width_text="000"
+                app:wheel_visible_item_count="3"
+                app:wheel_selected_item_position="3"
+                app:wheel_data="@array/hours"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hours"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="12dp">
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/dialog_start_driving_wheel_after_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:wheel_curtain="false"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="false"
+                app:wheel_indicator="true"
+                app:wheel_indicator_color="@color/colorAccent"
+                app:wheel_item_text_color="@color/gray"
+                app:wheel_item_text_size="16sp"
+                app:wheel_maximum_width_text="000"
+                app:wheel_visible_item_count="3"
+                app:wheel_selected_item_position="3"
+                app:wheel_data="@array/minutes"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="minutes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/dialog_start_driving_LL_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="22dp"
+        android:visibility="gone">
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/dialog_start_driving_wheel_at_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/colorAccent"
+            app:wheel_item_text_color="@color/gray"
+            app:wheel_item_text_size="16sp"
+            app:wheel_maximum_width_text="000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="3"
+            app:wheel_data="@array/hours"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/dialog_start_driving_wheel_at_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/colorAccent"
+            app:wheel_item_text_color="@color/gray"
+            app:wheel_item_text_size="16sp"
+            app:wheel_maximum_width_text="000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="3"
+            app:wheel_data="@array/minutes"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/dialog_start_driving_wheel_at_am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/colorAccent"
+            app:wheel_item_text_color="@color/gray"
+            app:wheel_item_text_size="16sp"
+            app:wheel_maximum_width_text="000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="0"
+            app:wheel_data="@array/am_pm"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button android:id="@+id/dialog_start_driving_button_letsGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="22dp"
+        android:text="Let's GO"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_start_driving"/>
+
+</LinearLayout>
