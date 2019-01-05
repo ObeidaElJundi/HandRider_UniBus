@@ -22,15 +22,15 @@
   
   #### DEMO (images) 
   1. This will be the first interface after opening the application. The map is automatically scaled to show both Beirut campus and Debbieh campus. A marker, BAU icon, has been set on each campus.
-    * ![image](https://user-images.githubusercontent.com/9033365/27075071-9939a0e0-5031-11e7-974d-364d302e44cc.png)
+![image](https://user-images.githubusercontent.com/9033365/27075071-9939a0e0-5031-11e7-974d-364d302e44cc.png)
   
   2. Before the driver starts driving from his station, he should click on the lower button, the button with a car steering wheel, and specify when he is leaving: now, after some time, or at specific time.
 
-    * ![image](https://user-images.githubusercontent.com/9033365/27075158-e0d14a48-5031-11e7-86d1-4d63fbd4922f.png)
+![image](https://user-images.githubusercontent.com/9033365/27075158-e0d14a48-5031-11e7-86d1-4d63fbd4922f.png)
   
   3. If **AFTER** or **AT** is checked, you need to specify the exact time by scrolling the hours and minutes wheels. If leaving now, just check **NOW**. Finally, click **LET’S GO**.
 
-    * ![image](https://user-images.githubusercontent.com/9033365/27075185-0125a74e-5032-11e7-8042-95b455ef4bfd.png)
+![image](https://user-images.githubusercontent.com/9033365/27075185-0125a74e-5032-11e7-8042-95b455ef4bfd.png)
   
   4. After pressing **LET’S GO**, the dialog will be dismissed, a new record will be added to the database, and the user interface (UI) will be updates as illustrated:
     * Bus status at the top.
@@ -38,18 +38,18 @@
     * The current location of the bus as orange bus icon.
     * Remaining time and distance (updated each 2 second).
 
-    * ![image](https://user-images.githubusercontent.com/9033365/27075214-246a7bc6-5032-11e7-9d6b-5d5c9d23241e.png)
+![image](https://user-images.githubusercontent.com/9033365/27075214-246a7bc6-5032-11e7-9d6b-5d5c9d23241e.png)
   
   5. Notice how the status is updated when the driver leaves the station (exits the geofence). Notice that the remaining time and distance are updated, too.
 
-    * ![image](https://user-images.githubusercontent.com/9033365/27075259-4c44423a-5032-11e7-89fa-85bd0c90492f.png)
+![image](https://user-images.githubusercontent.com/9033365/27075259-4c44423a-5032-11e7-89fa-85bd0c90492f.png)
   
   6. When a passenger requests a ride telling he is waiting somewhere in the middle of the trip, in Khalde for example, the driver will be notified (see notification represented by orange passenger icon on the top left), and a marker, orange passenger icon, will be shown on the exact location of the waiting passenger.
 
-    * ![image](https://user-images.githubusercontent.com/9033365/27075328-7792a1ca-5032-11e7-95f5-12562d02dd3c.png)
+![image](https://user-images.githubusercontent.com/9033365/27075328-7792a1ca-5032-11e7-95f5-12562d02dd3c.png)
   
   7. When the driver gets close to the waiting passenger (detected by geofencing), a reminder will be fired, and the map will zoom to show the bus and the passenger. After picking the passenger, its marker will be removed.
 
-    * ![image](https://user-images.githubusercontent.com/9033365/27075368-8d8d4e6c-5032-11e7-9123-06da133d7d87.png)
+![image](https://user-images.githubusercontent.com/9033365/27075368-8d8d4e6c-5032-11e7-9123-06da133d7d87.png)
 
-    * ![image](https://user-images.githubusercontent.com/9033365/27075391-a590a324-5032-11e7-9556-a9187cbd3110.png)
+![image](https://user-images.githubusercontent.com/9033365/27075391-a590a324-5032-11e7-9556-a9187cbd3110.png)
